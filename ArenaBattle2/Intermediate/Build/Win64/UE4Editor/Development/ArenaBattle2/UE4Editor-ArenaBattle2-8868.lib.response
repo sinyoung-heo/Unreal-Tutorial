@@ -1,0 +1,15 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-ArenaBattle2-8868.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Programming Projects\Unreal Projects\UE4\ArenaBattle2\Intermediate\Build\Win64\ArenaBattle2Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"C:\Programming Projects\Unreal Projects\UE4\ArenaBattle2\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattle2\ArenaBattle2.cpp.obj"
+"C:\Programming Projects\Unreal Projects\UE4\ArenaBattle2\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattle2\Fountain.cpp.obj"
+"C:\Programming Projects\Unreal Projects\UE4\ArenaBattle2\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattle2\ArenaBattle2.init.gen.cpp.obj"
+"C:\Programming Projects\Unreal Projects\UE4\ArenaBattle2\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattle2\Fountain.gen.cpp.obj"
+"C:\Programming Projects\Unreal Projects\UE4\ArenaBattle2\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattle2\Default.rc2.res"
+/OUT:"C:\Programming Projects\Unreal Projects\UE4\ArenaBattle2\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattle2\UE4Editor-ArenaBattle2-8868.lib"

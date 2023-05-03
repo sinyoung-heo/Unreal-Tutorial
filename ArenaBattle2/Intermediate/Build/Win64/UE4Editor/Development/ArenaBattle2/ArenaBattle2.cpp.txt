@@ -1,0 +1,2 @@
+C:\Programming Projects\Unreal Projects\UE4\ArenaBattle2\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattle2\Definitions.ArenaBattle2.h
+C:\Programming Projects\Unreal Projects\UE4\ArenaBattle2\Source\ArenaBattle2\ArenaBattle2.h
