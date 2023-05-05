@@ -14,6 +14,7 @@ AFountain::AFountain()
 
 	RootComponent = Body;
 	Water->SetupAttachment(Body);
+	Water->SetRelativeLocation(FVector(0.0f, 0.0f, 135.0f));
 }
 
 // Called when the game starts or when spawned
