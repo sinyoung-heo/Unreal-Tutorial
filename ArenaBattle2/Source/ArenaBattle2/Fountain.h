@@ -28,4 +28,10 @@ public:
 
 	UPROPERTY(VisibleAnyWhere)
 	UStaticMeshComponent* Water;
+
+	UPROPERTY(VisibleAnyWhere)
+	UPointLightComponent* Light;
+
+	UPROPERTY(VisibleAnyWhere)
+	UParticleSystemComponent* Splash;
 };
