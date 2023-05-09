@@ -3,4 +3,5 @@
 #include "ArenaBattle2.h"
 #include "Modules/ModuleManager.h"
 
+DEFINE_LOG_CATEGORY(ArenaBattle2);
 IMPLEMENT_PRIMARY_GAME_MODULE( FDefaultGameModuleImpl, ArenaBattle2, "ArenaBattle2" );
