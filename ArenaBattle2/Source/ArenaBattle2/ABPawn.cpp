@@ -40,6 +40,13 @@ void AABPawn::BeginPlay()
 {
 	Super::BeginPlay();
 	
+	Mesh->SetAnimationMode(EAnimationMode::AnimationSingleNode);
+	UAnimationAsset* AnimAsset = LoadObject<UAnimationAsset>(nullptr
+		, TEXT("/Game/Book/Animations/WarriorRun.WarriorRun"));
+	if (nullptr != AnimAsset)
+	{
+		Mesh->PlayAnimation(AnimAsset, true);
+	}
 }
 
 // Called every frame
