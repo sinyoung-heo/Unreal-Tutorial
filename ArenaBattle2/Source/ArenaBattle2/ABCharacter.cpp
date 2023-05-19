@@ -47,6 +47,8 @@ void AABCharacter::BeginPlay()
 
 void AABCharacter::SetControlMode(EControlMode ControlMode)
 {
+	CurrentControlMode = ControlMode;
+
 	switch (ControlMode)
 	{
 	case AABCharacter::EControlMode::GTA:
@@ -111,6 +113,8 @@ void AABCharacter::Tick(float DeltaTime)
 void AABCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
+
+	PlayerInputComponent->BindAction(TEXT("ViewChange"), EInputEvent::IE_Pressed, this, &AABCharacter::ViewChange);
 
 	PlayerInputComponent->BindAxis(TEXT("UpDown"), this, &AABCharacter::UpDown);
 	PlayerInputComponent->BindAxis(TEXT("LeftRight"), this, &AABCharacter::LeftRight);
@@ -183,6 +187,23 @@ void AABCharacter::Turn(float NewAxisValue)
 	case AABCharacter::EControlMode::DIABLO:
 		{
 
+		}
+		break;
+	}
+}
+
+void AABCharacter::ViewChange()
+{
+	switch (CurrentControlMode)
+	{
+	case AABCharacter::EControlMode::GTA:
+		{
+			SetControlMode(EControlMode::DIABLO);
+		}
+		break;
+	case AABCharacter::EControlMode::DIABLO:
+		{
+			SetControlMode(EControlMode::GTA);
 		}
 		break;
 	}
