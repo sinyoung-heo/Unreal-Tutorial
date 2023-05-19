@@ -49,4 +49,10 @@ private:
 	void Turn(float NewAxisValue);
 
 	void ViewChange();
+
+private:
+	float ArmLengthTo = 0.0f;
+	FRotator ArmRotationTo = FRotator::ZeroRotator;
+	float ArmLengthSpeed = 0.0f;
+	float ArmRotationSpeed = 0.0f;
 };

@@ -36,6 +36,9 @@ AABCharacter::AABCharacter()
 	}
 
 	SetControlMode(EControlMode::DIABLO);
+
+	ArmLengthSpeed = 3.0f;
+	ArmRotationSpeed = 10.0f;
 }
 
 // Called when the game starts or when spawned
@@ -53,8 +56,9 @@ void AABCharacter::SetControlMode(EControlMode ControlMode)
 	{
 	case AABCharacter::EControlMode::GTA:
 		{
-			SpringArm->TargetArmLength = 450.0f;
-			SpringArm->SetRelativeRotation(FRotator::ZeroRotator);
+			// SpringArm->TargetArmLength = 450.0f;
+			// SpringArm->SetRelativeRotation(FRotator::ZeroRotator);
+			ArmLengthTo = 450.0f;
 			SpringArm->bUsePawnControlRotation = true;
 			SpringArm->bInheritPitch = true;
 			SpringArm->bInheritRoll = true;
@@ -69,8 +73,10 @@ void AABCharacter::SetControlMode(EControlMode ControlMode)
 		break;
 	case AABCharacter::EControlMode::DIABLO:
 		{
-			SpringArm->TargetArmLength = 800.0f;
-			SpringArm->SetRelativeRotation(FRotator(-45.0f, 0.0f, 0.0f));
+			// SpringArm->TargetArmLength = 800.0f;
+			// SpringArm->SetRelativeRotation(FRotator(-45.0f, 0.0f, 0.0f));
+			ArmLengthTo = 800.0f;
+			ArmRotationTo = FRotator(-45.0f, 0.0f, 0.0f);
 			SpringArm->bUsePawnControlRotation = false;
 			SpringArm->bInheritPitch = false;
 			SpringArm->bInheritRoll = false;
@@ -90,11 +96,28 @@ void AABCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	SpringArm->TargetArmLength = FMath::FInterpTo(SpringArm->TargetArmLength, ArmLengthTo, DeltaTime, ArmLengthSpeed);
+
 	switch (CurrentControlMode)
 	{
 	case AABCharacter::EControlMode::GTA:
 		{
+		}
+		break;
+	case AABCharacter::EControlMode::DIABLO:
+		{
+			FRotator RelativeRotator = SpringArm->GetRelativeRotation();
+			RelativeRotator = FMath::RInterpTo(SpringArm->GetRelativeRotation(), ArmRotationTo, DeltaTime, ArmRotationSpeed);
 
+			SpringArm->SetRelativeRotation(RelativeRotator);
+		}
+		break;
+	}
+
+	switch (CurrentControlMode)
+	{
+	case AABCharacter::EControlMode::GTA:
+		{
 		}
 		break;
 	case AABCharacter::EControlMode::DIABLO:
@@ -198,11 +221,13 @@ void AABCharacter::ViewChange()
 	{
 	case AABCharacter::EControlMode::GTA:
 		{
+			GetController()->SetControlRotation(GetActorRotation());
 			SetControlMode(EControlMode::DIABLO);
 		}
 		break;
 	case AABCharacter::EControlMode::DIABLO:
 		{
+			GetController()->SetControlRotation(SpringArm->GetRelativeRotation());
 			SetControlMode(EControlMode::GTA);
 		}
 		break;
