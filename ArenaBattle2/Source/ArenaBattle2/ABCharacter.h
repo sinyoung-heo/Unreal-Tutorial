@@ -49,6 +49,7 @@ private:
 	void Turn(float NewAxisValue);
 
 	void ViewChange();
+	void Attack();
 
 private:
 	float ArmLengthTo = 0.0f;
