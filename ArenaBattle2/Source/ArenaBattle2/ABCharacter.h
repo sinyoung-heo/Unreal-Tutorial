@@ -84,4 +84,10 @@ private:
 	FRotator ArmRotationTo = FRotator::ZeroRotator;
 	float ArmLengthSpeed = 0.0f;
 	float ArmRotationSpeed = 0.0f;
+
+	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
+	float AttackRange;
+
+	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = Attack, Meta = (AllowPrivateAccess = true))
+	float AttackRadius;
 };
