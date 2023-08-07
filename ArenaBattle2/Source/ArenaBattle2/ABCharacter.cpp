@@ -7,6 +7,7 @@
 #include "ABCharacterStatComponent.h"
 #include "DrawDebugHelpers.h"
 #include "Components/WidgetComponent.h"
+#include "ABCharacterWidget.h"
 
 // Sets default values
 AABCharacter::AABCharacter()
@@ -75,6 +76,13 @@ AABCharacter::AABCharacter()
 void AABCharacter::BeginPlay()
 {
 	Super::BeginPlay();
+
+	// 언리얼 4.21 버전부터 위젯의 초기화 시점이 PostInitializeComponents 에서 BeginPlay 로 변경되었다. 
+	auto CharacterWidget = Cast<UABCharacterWidget>(HPBarWidget->GetUserWidgetObject());
+	if (nullptr != CharacterWidget)
+	{
+		CharacterWidget->BindCharacterStat(CharacterStat);
+	}
 }
 
 void AABCharacter::SetControlMode(EControlMode ControlMode)

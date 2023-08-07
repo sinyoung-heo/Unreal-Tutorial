@@ -7,6 +7,7 @@
 #include "ABCharacterStatComponent.generated.h"
 
 DECLARE_MULTICAST_DELEGATE(FOnHPIsZeroDelegate);
+DECLARE_MULTICAST_DELEGATE(FOnHPChangedDelegate);
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class ARENABATTLE2_API UABCharacterStatComponent : public UActorComponent
@@ -32,6 +33,10 @@ public:
 	float GetAttack();
 
 	FOnHPIsZeroDelegate OnHPIsZero;
+
+	void SetHP(float NewHP);
+	float GetHPRatio();
+	FOnHPChangedDelegate OnHPChanged;
 
 private:
 	struct FABCharacterData* CurrentStatData = nullptr;
