@@ -1,2 +1,18 @@
-﻿  Target is up to date
-  Total execution time: 0.68 seconds
+﻿  Using 'git status' to determine working set for adaptive non-unity build (C:\Programming Projects\Unreal Projects\UE4\Unreal-Tutorial).
+  Creating makefile for ArenaBattle2Editor (no existing makefile)
+  Building ArenaBattle2Editor...
+  Using Visual Studio 2022 14.36.32537 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  Building 7 actions with 16 processes...
+    [1/7] Default.rc2
+    [2/7] UE4Editor-ArenaBattle2-0001.lib
+       C:\Programming Projects\Unreal Projects\UE4\Unreal-Tutorial\ArenaBattle2\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattle2\UE4Editor-ArenaBattle2-0001.lib 라이브러리 및 C:\Programming Projects\Unreal Projects\UE4\Unreal-Tutorial\ArenaBattle2\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattle2\UE4Editor-ArenaBattle2-0001.exp 개체를 생성하고 있습니다.
+    [3/7] ArenaBattleSetting.cpp
+    [4/7] UE4Editor-ArenaBattle2-0001.dll
+       C:\Programming Projects\Unreal Projects\UE4\Unreal-Tutorial\ArenaBattle2\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattle2\UE4Editor-ArenaBattle2-0001.suppressed.lib 라이브러리 및 C:\Programming Projects\Unreal Projects\UE4\Unreal-Tutorial\ArenaBattle2\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattle2\UE4Editor-ArenaBattle2-0001.suppressed.exp 개체를 생성하고 있습니다.
+    [5/7] UE4Editor-ArenaBattleSetting-0001.lib
+       C:\Programming Projects\Unreal Projects\UE4\Unreal-Tutorial\ArenaBattle2\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattleSetting\UE4Editor-ArenaBattleSetting-0001.lib 라이브러리 및 C:\Programming Projects\Unreal Projects\UE4\Unreal-Tutorial\ArenaBattle2\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattleSetting\UE4Editor-ArenaBattleSetting-0001.exp 개체를 생성하고 있습니다.
+    [6/7] UE4Editor-ArenaBattleSetting-0001.dll
+       C:\Programming Projects\Unreal Projects\UE4\Unreal-Tutorial\ArenaBattle2\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattleSetting\UE4Editor-ArenaBattleSetting-0001.suppressed.lib 라이브러리 및 C:\Programming Projects\Unreal Projects\UE4\Unreal-Tutorial\ArenaBattle2\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattleSetting\UE4Editor-ArenaBattleSetting-0001.suppressed.exp 개체를 생성하고 있습니다.
+    [7/7] ArenaBattle2Editor.target
+  Total time in Parallel executor: 1.53 seconds
+  Total execution time: 6.15 seconds

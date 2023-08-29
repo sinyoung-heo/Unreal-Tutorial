@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define ARENABATTLE2_Fountain_generated_h
 
-#define ArenaBattle2_Source_ArenaBattle2_Fountain_h_12_SPARSE_DATA
-#define ArenaBattle2_Source_ArenaBattle2_Fountain_h_12_RPC_WRAPPERS
-#define ArenaBattle2_Source_ArenaBattle2_Fountain_h_12_RPC_WRAPPERS_NO_PURE_DECLS
-#define ArenaBattle2_Source_ArenaBattle2_Fountain_h_12_INCLASS_NO_PURE_DECLS \
+#define ArenaBattle2_Source_ArenaBattle2_Public_Fountain_h_13_SPARSE_DATA
+#define ArenaBattle2_Source_ArenaBattle2_Public_Fountain_h_13_RPC_WRAPPERS
+#define ArenaBattle2_Source_ArenaBattle2_Public_Fountain_h_13_RPC_WRAPPERS_NO_PURE_DECLS
+#define ArenaBattle2_Source_ArenaBattle2_Public_Fountain_h_13_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFountain(); \
 	friend struct Z_Construct_UClass_AFountain_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(AFountain)
 
 
-#define ArenaBattle2_Source_ArenaBattle2_Fountain_h_12_INCLASS \
+#define ArenaBattle2_Source_ArenaBattle2_Public_Fountain_h_13_INCLASS \
 private: \
 	static void StaticRegisterNativesAFountain(); \
 	friend struct Z_Construct_UClass_AFountain_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(AFountain)
 
 
-#define ArenaBattle2_Source_ArenaBattle2_Fountain_h_12_STANDARD_CONSTRUCTORS \
+#define ArenaBattle2_Source_ArenaBattle2_Public_Fountain_h_13_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFountain(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFountain) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define ArenaBattle2_Source_ArenaBattle2_Fountain_h_12_ENHANCED_CONSTRUCTORS \
+#define ArenaBattle2_Source_ArenaBattle2_Public_Fountain_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFountain(AFountain&&); \
@@ -58,28 +58,31 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFountain)
 
 
-#define ArenaBattle2_Source_ArenaBattle2_Fountain_h_12_PRIVATE_PROPERTY_OFFSET
-#define ArenaBattle2_Source_ArenaBattle2_Fountain_h_9_PROLOG
-#define ArenaBattle2_Source_ArenaBattle2_Fountain_h_12_GENERATED_BODY_LEGACY \
+#define ArenaBattle2_Source_ArenaBattle2_Public_Fountain_h_13_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__RotateSpeed() { return STRUCT_OFFSET(AFountain, RotateSpeed); }
+
+
+#define ArenaBattle2_Source_ArenaBattle2_Public_Fountain_h_10_PROLOG
+#define ArenaBattle2_Source_ArenaBattle2_Public_Fountain_h_13_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	ArenaBattle2_Source_ArenaBattle2_Fountain_h_12_PRIVATE_PROPERTY_OFFSET \
-	ArenaBattle2_Source_ArenaBattle2_Fountain_h_12_SPARSE_DATA \
-	ArenaBattle2_Source_ArenaBattle2_Fountain_h_12_RPC_WRAPPERS \
-	ArenaBattle2_Source_ArenaBattle2_Fountain_h_12_INCLASS \
-	ArenaBattle2_Source_ArenaBattle2_Fountain_h_12_STANDARD_CONSTRUCTORS \
+	ArenaBattle2_Source_ArenaBattle2_Public_Fountain_h_13_PRIVATE_PROPERTY_OFFSET \
+	ArenaBattle2_Source_ArenaBattle2_Public_Fountain_h_13_SPARSE_DATA \
+	ArenaBattle2_Source_ArenaBattle2_Public_Fountain_h_13_RPC_WRAPPERS \
+	ArenaBattle2_Source_ArenaBattle2_Public_Fountain_h_13_INCLASS \
+	ArenaBattle2_Source_ArenaBattle2_Public_Fountain_h_13_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define ArenaBattle2_Source_ArenaBattle2_Fountain_h_12_GENERATED_BODY \
+#define ArenaBattle2_Source_ArenaBattle2_Public_Fountain_h_13_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	ArenaBattle2_Source_ArenaBattle2_Fountain_h_12_PRIVATE_PROPERTY_OFFSET \
-	ArenaBattle2_Source_ArenaBattle2_Fountain_h_12_SPARSE_DATA \
-	ArenaBattle2_Source_ArenaBattle2_Fountain_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	ArenaBattle2_Source_ArenaBattle2_Fountain_h_12_INCLASS_NO_PURE_DECLS \
-	ArenaBattle2_Source_ArenaBattle2_Fountain_h_12_ENHANCED_CONSTRUCTORS \
+	ArenaBattle2_Source_ArenaBattle2_Public_Fountain_h_13_PRIVATE_PROPERTY_OFFSET \
+	ArenaBattle2_Source_ArenaBattle2_Public_Fountain_h_13_SPARSE_DATA \
+	ArenaBattle2_Source_ArenaBattle2_Public_Fountain_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+	ArenaBattle2_Source_ArenaBattle2_Public_Fountain_h_13_INCLASS_NO_PURE_DECLS \
+	ArenaBattle2_Source_ArenaBattle2_Public_Fountain_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -87,7 +90,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> ARENABATTLE2_API UClass* StaticClass<class AFountain>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID ArenaBattle2_Source_ArenaBattle2_Fountain_h
+#define CURRENT_FILE_ID ArenaBattle2_Source_ArenaBattle2_Public_Fountain_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

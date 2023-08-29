@@ -2,12 +2,12 @@
 	"Targets": [
 		{
 			"Name": "ArenaBattle2",
-			"Path": "C:\\Programming Projects\\Unreal Projects\\UE4\\ArenaBattle2\\Source\\ArenaBattle2.Target.cs",
+			"Path": "C:\\Programming Projects\\Unreal Projects\\UE4\\Unreal-Tutorial\\ArenaBattle2\\Source\\ArenaBattle2.Target.cs",
 			"Type": "Game"
 		},
 		{
 			"Name": "ArenaBattle2Editor",
-			"Path": "C:\\Programming Projects\\Unreal Projects\\UE4\\ArenaBattle2\\Source\\ArenaBattle2Editor.Target.cs",
+			"Path": "C:\\Programming Projects\\Unreal Projects\\UE4\\Unreal-Tutorial\\ArenaBattle2\\Source\\ArenaBattle2Editor.Target.cs",
 			"Type": "Editor"
 		}
 	]
