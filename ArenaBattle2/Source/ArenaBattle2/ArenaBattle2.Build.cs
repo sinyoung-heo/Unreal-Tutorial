@@ -19,7 +19,7 @@ public class ArenaBattle2 : ModuleRules
 		, "GameplayTasks"
 		});
 
-		PrivateDependencyModuleNames.AddRange(new string[] {  });
+		PrivateDependencyModuleNames.AddRange(new string[] { "ArenaBattleSetting" });
 
 		// Uncomment if you are using Slate UI
 		// PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });
