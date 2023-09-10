@@ -1,18 +1,22 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (C:\Programming Projects\Unreal Projects\UE4\Unreal-Tutorial).
-  Creating makefile for ArenaBattle2Editor (no existing makefile)
+  Parsing headers for ArenaBattle2Editor
+    Running UnrealHeaderTool "C:\Programming Projects\Unreal Projects\UE4\Unreal-Tutorial\ArenaBattle2\ArenaBattle2.uproject" "C:\Programming Projects\Unreal Projects\UE4\Unreal-Tutorial\ArenaBattle2\Intermediate\Build\Win64\ArenaBattle2Editor\Development\ArenaBattle2Editor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\hechg\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+  LogInit: Display: Loading text-based GConfig....
+  Reflection code generated for ArenaBattle2Editor in 3.1195878 seconds
   Building ArenaBattle2Editor...
-  Using Visual Studio 2022 14.36.32537 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 7 actions with 16 processes...
-    [1/7] Default.rc2
-    [2/7] UE4Editor-ArenaBattle2-0001.lib
-       C:\Programming Projects\Unreal Projects\UE4\Unreal-Tutorial\ArenaBattle2\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattle2\UE4Editor-ArenaBattle2-0001.lib 라이브러리 및 C:\Programming Projects\Unreal Projects\UE4\Unreal-Tutorial\ArenaBattle2\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattle2\UE4Editor-ArenaBattle2-0001.exp 개체를 생성하고 있습니다.
-    [3/7] ArenaBattleSetting.cpp
-    [4/7] UE4Editor-ArenaBattle2-0001.dll
-       C:\Programming Projects\Unreal Projects\UE4\Unreal-Tutorial\ArenaBattle2\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattle2\UE4Editor-ArenaBattle2-0001.suppressed.lib 라이브러리 및 C:\Programming Projects\Unreal Projects\UE4\Unreal-Tutorial\ArenaBattle2\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattle2\UE4Editor-ArenaBattle2-0001.suppressed.exp 개체를 생성하고 있습니다.
-    [5/7] UE4Editor-ArenaBattleSetting-0001.lib
-       C:\Programming Projects\Unreal Projects\UE4\Unreal-Tutorial\ArenaBattle2\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattleSetting\UE4Editor-ArenaBattleSetting-0001.lib 라이브러리 및 C:\Programming Projects\Unreal Projects\UE4\Unreal-Tutorial\ArenaBattle2\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattleSetting\UE4Editor-ArenaBattleSetting-0001.exp 개체를 생성하고 있습니다.
-    [6/7] UE4Editor-ArenaBattleSetting-0001.dll
-       C:\Programming Projects\Unreal Projects\UE4\Unreal-Tutorial\ArenaBattle2\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattleSetting\UE4Editor-ArenaBattleSetting-0001.suppressed.lib 라이브러리 및 C:\Programming Projects\Unreal Projects\UE4\Unreal-Tutorial\ArenaBattle2\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattleSetting\UE4Editor-ArenaBattleSetting-0001.suppressed.exp 개체를 생성하고 있습니다.
-    [7/7] ArenaBattle2Editor.target
-  Total time in Parallel executor: 1.53 seconds
-  Total execution time: 6.15 seconds
+  Using Visual Studio 2022 14.37.32822 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  Building 8 actions with 16 processes...
+    [1/8] UE4Editor-ArenaBattleSetting-0028.lib
+       C:\Programming Projects\Unreal Projects\UE4\Unreal-Tutorial\ArenaBattle2\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattleSetting\UE4Editor-ArenaBattleSetting-0028.lib 라이브러리 및 C:\Programming Projects\Unreal Projects\UE4\Unreal-Tutorial\ArenaBattle2\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattleSetting\UE4Editor-ArenaBattleSetting-0028.exp 개체를 생성하고 있습니다.
+    [2/8] UE4Editor-ArenaBattleSetting-0028.dll
+       C:\Programming Projects\Unreal Projects\UE4\Unreal-Tutorial\ArenaBattle2\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattleSetting\UE4Editor-ArenaBattleSetting-0028.suppressed.lib 라이브러리 및 C:\Programming Projects\Unreal Projects\UE4\Unreal-Tutorial\ArenaBattle2\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattleSetting\UE4Editor-ArenaBattleSetting-0028.suppressed.exp 개체를 생성하고 있습니다.
+    [3/8] ArenaBattle2.init.gen.cpp
+    [4/8] ABSection.gen.cpp
+    [5/8] ABSection.cpp
+    [6/8] UE4Editor-ArenaBattle2-0028.lib
+       C:\Programming Projects\Unreal Projects\UE4\Unreal-Tutorial\ArenaBattle2\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattle2\UE4Editor-ArenaBattle2-0028.lib 라이브러리 및 C:\Programming Projects\Unreal Projects\UE4\Unreal-Tutorial\ArenaBattle2\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattle2\UE4Editor-ArenaBattle2-0028.exp 개체를 생성하고 있습니다.
+    [7/8] UE4Editor-ArenaBattle2-0028.dll
+       C:\Programming Projects\Unreal Projects\UE4\Unreal-Tutorial\ArenaBattle2\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattle2\UE4Editor-ArenaBattle2-0028.suppressed.lib 라이브러리 및 C:\Programming Projects\Unreal Projects\UE4\Unreal-Tutorial\ArenaBattle2\Intermediate\Build\Win64\UE4Editor\Development\ArenaBattle2\UE4Editor-ArenaBattle2-0028.suppressed.exp 개체를 생성하고 있습니다.
+    [8/8] ArenaBattle2Editor.target
+  Total time in Parallel executor: 2.88 seconds
+  Total execution time: 6.74 seconds

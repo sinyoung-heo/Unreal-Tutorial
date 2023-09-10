@@ -33,14 +33,17 @@
 /wd4838
 /I .
 /I "C:\Programming Projects\Unreal Projects\UE4\Unreal-Tutorial\ArenaBattle2\Source\ArenaBattle2\Private"
-/I ..\Intermediate\Build\Win64\UE4Editor\Inc\Engine
+/I "C:\Programming Projects\Unreal Projects\UE4\Unreal-Tutorial\ArenaBattle2\Intermediate\Build\Win64\UE4Editor\Inc\ArenaBattleSetting"
+/I "C:\Programming Projects\Unreal Projects\UE4\Unreal-Tutorial\ArenaBattle2\Source"
+/I "C:\Programming Projects\Unreal Projects\UE4\Unreal-Tutorial\ArenaBattle2\Source\ArenaBattleSetting\Public"
 /I Runtime
-/I Runtime\Engine\Classes
-/I Runtime\Engine\Public
 /I Runtime\TraceLog\Public
 /I Runtime\Core\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\CoreUObject
 /I Runtime\CoreUObject\Public
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\Engine
+/I Runtime\Engine\Classes
+/I Runtime\Engine\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\NetCore
 /I Runtime\Net
 /I Runtime\Net\Core\Classes
@@ -232,9 +235,6 @@
 /I Editor\Kismet\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\ClothingSystemRuntimeInterface
 /I Runtime\ClothingSystemRuntimeInterface\Public
-/I "C:\Programming Projects\Unreal Projects\UE4\Unreal-Tutorial\ArenaBattle2\Intermediate\Build\Win64\UE4Editor\Inc\ArenaBattleSetting"
-/I "C:\Programming Projects\Unreal Projects\UE4\Unreal-Tutorial\ArenaBattle2\Source"
-/I "C:\Programming Projects\Unreal Projects\UE4\Unreal-Tutorial\ArenaBattle2\Source\ArenaBattleSetting\Public"
 /I "C:\Programming Projects\Unreal Projects\UE4\Unreal-Tutorial\ArenaBattle2\Intermediate\Build\Win64\UE4Editor\Inc\ArenaBattle2"
 /I "C:\Programming Projects\Unreal Projects\UE4\Unreal-Tutorial\ArenaBattle2\Source\ArenaBattle2\Public"
 /I ThirdParty\PhysX3\PxShared\include
